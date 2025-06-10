@@ -13,7 +13,7 @@ It includes:
 
 ## 📁 Repository Structure
 
-```plaintext
+```
 .
 ├── alumathgroup13/                 # Python package for matrix operations
 │   ├── alumathgroup13/            # Core library (matrix_operations.py, __init__.py)
@@ -37,19 +37,19 @@ It includes:
 ## ✅ What We Implemented
 
 ### 📌 Part 1: PCA from Scratch
-- Covariance matrix calculation  
-- Eigenvalue and eigenvector computation  
-- Projection onto principal components  
-- Dynamic number of components based on explained variance  
-- Visualizations before and after PCA  
+- Covariance matrix calculation
+- Eigenvalue and eigenvector computation
+- Projection onto principal components
+- Dynamic number of components based on explained variance
+- Visualizations before and after PCA
 
 ### 📌 Part 2: Manual Eigenvalue and Eigenvector Calculation
-- Handwritten proofs and breakdowns  
-- PDF scan with clear contributions from each member  
+- Handwritten proofs and breakdowns
+- PDF scan with clear contributions from each member
 
 ### 📌 Part 3: Custom Python Library
-- **Library name:** `alumathgroup13`  
-- Supports matrix multiplication for matrices of any dimension  
-- Error handling included  
-- Pure Python (no external math libraries like NumPy)  
+- **Library name:** `alumathgroup13`
+- Supports matrix multiplication for matrices of any dimension
+- Error handling included
+- Pure Python (no external math libraries like NumPy)
 - Published on PyPI
