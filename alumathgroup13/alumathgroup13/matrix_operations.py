@@ -1,15 +1,15 @@
 """
 Matrix operations module for AlumathGroup13
-Provides matrix multiplication for different dimensions
+Provides matrix multiplication for different dimensions using pure Python only
 """
 
 def validate_matrices(A, B):
     """
-    Validate that matrices can be multiplied
+    Validate that matrices can be multiplied using pure Python only
     
     Args:
-        A: First matrix (list of lists or numpy array)
-        B: Second matrix (list of lists or numpy array)
+        A: First matrix (list of lists only)
+        B: Second matrix (list of lists only)
     
     Returns:
         tuple: (rows_A, cols_A, rows_B, cols_B)
@@ -17,22 +17,31 @@ def validate_matrices(A, B):
     Raises:
         ValueError: If matrices cannot be multiplied
     """
-    # Convert to list of lists if needed
-    if hasattr(A, 'tolist'):
-        A = A.tolist()
-    if hasattr(B, 'tolist'):
-        B = B.tolist()
+    # Check if matrices are valid lists
+    if not isinstance(A, list) or not isinstance(B, list):
+        raise ValueError("Matrices must be lists of lists")
     
-    # Check if matrices are valid
     if not A or not B:
         raise ValueError("Matrices cannot be empty")
+    
+    # Ensure all rows are lists
+    if not all(isinstance(row, list) for row in A):
+        raise ValueError("Matrix A must be a list of lists")
+    if not all(isinstance(row, list) for row in B):
+        raise ValueError("Matrix B must be a list of lists")
     
     rows_A = len(A)
     cols_A = len(A[0]) if A else 0
     rows_B = len(B)
     cols_B = len(B[0]) if B else 0
     
-    # Validate dimensions
+    # Validate that all rows have same length
+    if not all(len(row) == cols_A for row in A):
+        raise ValueError("All rows in matrix A must have the same length")
+    if not all(len(row) == cols_B for row in B):
+        raise ValueError("All rows in matrix B must have the same length")
+    
+    # Validate dimensions for multiplication
     if cols_A != rows_B:
         raise ValueError(f"Cannot multiply matrices: {rows_A}x{cols_A} and {rows_B}x{cols_B}. "
                         f"Number of columns in first matrix ({cols_A}) must equal "
@@ -42,11 +51,11 @@ def validate_matrices(A, B):
 
 def matrix_multiply(A, B):
     """
-    Multiply two matrices using standard matrix multiplication
+    Multiply two matrices using standard matrix multiplication (pure Python only)
     
     Args:
-        A: First matrix (list of lists or numpy array)
-        B: Second matrix (list of lists or numpy array)
+        A: First matrix (list of lists only)
+        B: Second matrix (list of lists only)
     
     Returns:
         list: Resulting matrix as list of lists
@@ -57,26 +66,14 @@ def matrix_multiply(A, B):
         >>> result = matrix_multiply(A, B)
         >>> print(result)
         [[19, 22], [43, 50]]
-        
-        >>> A = [[1, 2, 3]]
-        >>> B = [[4], [5], [6]]
-        >>> result = matrix_multiply(A, B)
-        >>> print(result)
-        [[32]]
     """
-    # Validate matrices
+    # Validate matrices (pure Python validation)
     rows_A, cols_A, rows_B, cols_B = validate_matrices(A, B)
     
-    # Convert to list of lists if needed
-    if hasattr(A, 'tolist'):
-        A = A.tolist()
-    if hasattr(B, 'tolist'):
-        B = B.tolist()
-    
-    # Initialize result matrix
+    # Initialize result matrix with zeros
     result = [[0 for _ in range(cols_B)] for _ in range(rows_A)]
     
-    # Perform matrix multiplication
+    # Perform matrix multiplication using pure Python
     for i in range(rows_A):
         for j in range(cols_B):
             for k in range(cols_A):
@@ -86,16 +83,16 @@ def matrix_multiply(A, B):
 
 def matrix_info(matrix):
     """
-    Get information about a matrix
+    Get information about a matrix using pure Python only
     
     Args:
-        matrix: Input matrix (list of lists or numpy array)
+        matrix: Input matrix (list of lists only)
     
     Returns:
         dict: Matrix information including dimensions and properties
     """
-    if hasattr(matrix, 'tolist'):
-        matrix = matrix.tolist()
+    if not isinstance(matrix, list):
+        raise ValueError("Matrix must be a list of lists")
     
     if not matrix:
         return {"rows": 0, "cols": 0, "is_square": False, "is_empty": True}
