@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: alumathgroup13
+Version: 1.0.0
+Summary: Advanced Linear Algebra Matrix Operations for Python
+Home-page: https://github.com/twizelissa/alugroup13-library.git
+Author: Group13
+Author-email: e.twizeyima@alustudent.com
+Project-URL: Bug Reports, https://github.com/twizelissa/alugroup13-library.gitissues
+Project-URL: Source, https://github.com/twizelissa/alugroup13-library.gitalumathgroup13
+Keywords: linear algebra,matrix,multiplication,mathematics,numpy
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-python
+Dynamic: summary
