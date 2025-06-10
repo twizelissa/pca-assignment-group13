@@ -1,4 +1,4 @@
-# 🧠 PCA Assignment - Group 13
+# PCA Assignment - Group 13
 
 This repository contains the complete submission for **Formative 2: Principal Component Analysis**, as required in the Machine Learning module at ALU.
 
@@ -32,6 +32,7 @@ It includes:
 │
 ├── README.md                      # You are here - Project overview
 └── git-log.txt                    # Git logs showing contributions of each member
+```
 
 ## ✅ What We Implemented
 
@@ -42,7 +43,7 @@ It includes:
 - Dynamic number of components based on explained variance  
 - Visualizations before and after PCA  
 
-### 📌 Part 2: Manual Eigenvalue and Eigen vector Calculation
+### 📌 Part 2: Manual Eigenvalue and Eigenvector Calculation
 - Handwritten proofs and breakdowns  
 - PDF scan with clear contributions from each member  
 
@@ -51,4 +52,4 @@ It includes:
 - Supports matrix multiplication for matrices of any dimension  
 - Error handling included  
 - Pure Python (no external math libraries like NumPy)  
-- Published on PyPI  
+- Published on PyPI
