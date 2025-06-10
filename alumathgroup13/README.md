@@ -19,7 +19,7 @@ A pure Python library for advanced linear algebra operations, specifically desig
 
 ### From PyPI (Recommended)
 ```bash
-pip install alumathgroup13
+pip install group13-matrix-operations-2025==1.0.0
 ```
 
 ### From Source
@@ -287,9 +287,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👥 Authors
 
 **Group 13**
-- Member 1: [GitHub Profile](https://github.com/member1)
-- Member 2: [GitHub Profile](https://github.com/member2)
-- Member 3: [GitHub Profile](https://github.com/member3)
+- Member 1: [GitHub Profile](https://github.com/twizelissa)
+- Member 2: [GitHub Profile](https://github.com/aubert-gloire)
+- Member 3: [GitHub Profile](https://github.com/Uwingabir)
+- Member 3: [GitHub Profile](https://github.com/Umwanankabandi-liliane)
+
 
 ## 🙏 Acknowledgments
 
@@ -299,13 +301,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-For support, email group13@example.com or create an issue on GitHub.
+For support, email twizelissa@gmail.com or create an issue on GitHub.
 
-## 🔗 Links
-
-- [PyPI Package](https://pypi.org/project/alumathgroup13/)
-- [GitHub Repository](https://github.com/yourusername/alumathgroup13)
-- [Documentation](https://github.com/yourusername/alumathgroup13/wiki)
 
 ---
 
