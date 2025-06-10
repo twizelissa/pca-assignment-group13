@@ -1,0 +1,54 @@
+# 🧠 PCA Assignment - Group 13
+
+This repository contains the complete submission for **Formative 2: Principal Component Analysis**, as required in the Machine Learning module at ALU.
+
+It includes:
+- An implementation of PCA from scratch
+- A dynamic component selection using explained variance
+- Visualizations before and after dimensionality reduction
+- Handwritten eigenvalue calculations
+- A custom Python matrix library published to PyPI
+
+---
+
+## 📁 Repository Structure
+
+```plaintext
+.
+├── alumathgroup13/                 # Python package for matrix operations
+│   ├── alumathgroup13/            # Core library (matrix_operations.py, __init__.py)
+│   ├── dist/                      # Distribution packages (wheel and source tar.gz)
+│   ├── tests/                     # Unit tests for the matrix library
+│   ├── setup.py                   # Setup file for PyPI packaging
+│   ├── requirements.txt           # Dependencies
+│   ├── LICENSE                    # Open-source license
+│   └── README.md                  # Usage instructions for the library
+│
+├── notebook/                      # Jupyter notebook for PCA implementation
+│   └── PCA_Assignment_Group13.ipynb
+│
+├── handwritten-work/              # Handwritten eigenvalue calculations (PDF)
+│   └── eigenvalue_proofs_group13.pdf
+│
+├── README.md                      # You are here - Project overview
+└── git-log.txt                    # Git logs showing contributions of each member
+
+## ✅ What We Implemented
+
+### 📌 Part 1: PCA from Scratch
+- Covariance matrix calculation  
+- Eigenvalue and eigenvector computation  
+- Projection onto principal components  
+- Dynamic number of components based on explained variance  
+- Visualizations before and after PCA  
+
+### 📌 Part 2: Manual Eigenvalue and Eigen vector Calculation
+- Handwritten proofs and breakdowns  
+- PDF scan with clear contributions from each member  
+
+### 📌 Part 3: Custom Python Library
+- **Library name:** `alumathgroup13`  
+- Supports matrix multiplication for matrices of any dimension  
+- Error handling included  
+- Pure Python (no external math libraries like NumPy)  
+- Published on PyPI  
