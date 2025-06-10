@@ -129,13 +129,6 @@ git log --oneline --graph --all
 git shortlog -sn
 ```
 
-**Group 13 Members:**
-- **Member 1**: [Name] - PCA implementation, eigenvalue calculations
-- **Member 2**: [Name] - Library development, testing
-- **Member 3**: [Name] - Documentation, PyPI publishing
-
----
-
 ## 🛠️ Development Setup
 
 ### **For PCA Notebook**
